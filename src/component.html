@@ -1,0 +1,40 @@
+<polymer-element name="sticky-header" extends="div" attributes="option-itemEl option-offset">
+<!-- local files
+<link rel="stylesheet" href="../bower_components/backbone.ui.stickyheader/assets/css/backbone.ui.fullscreen.css" type="text/css" media="screen">
+<script type="text/javascript" src="../bower_components/backbone.ui.stickyheader/assets/js/backbone.ui.fullscreen.js"></script>
+-->
+<link type="text/css" href="//rawgit.com/backbone-ui/sticky-header/master/assets/css/backbone.ui.stickyheader.css" media="screen" rel="stylesheet">
+<script type="text/javascript" src="//rawgit.com/backbone-ui/sticky-header/master/assets/js/backbone.ui.stickyheader.js"></script>
+
+<script>
+	Polymer('sticky-header', {
+		created: function() {
+			// this is executed when the tag is inserted
+			//var button = this;
+
+			var options = {
+				el: this
+			};
+			// get options from attributes
+			if( this.attributes['option-itemEl'] ){
+				options.itemEl = this.attributes['option-itemEl'].value;
+			}
+			if( this.attributes['option-offset'] ){
+				options.offset = this.attributes['option-offset'].value;
+			}
+
+			// initiate view on element
+			var view = new Backbone.UI.StickyHeader( options );
+
+		}
+
+	});
+
+</script>
+<style>
+	/* element styles */
+	sticky-header {
+
+	}
+</style>
+</polymer-element>
