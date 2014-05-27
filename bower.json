@@ -1,0 +1,29 @@
+{
+	"name": "app.ui.stickyheader",
+	"version": "0.1.0",
+	"description": "A Polymer element that updates a collection to display headers in a fixed position (while relevant)",
+	"authors": [
+		"Makis Tracend <makis@makesit.es>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"ui",
+		"sticky",
+		"header",
+		"polymer",
+		"web-components"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/app-ui/sticky-header.git"
+	},
+	"ignore": [
+		"bower_components",
+		"node_modules"
+	],
+	"dependencies": {
+		"platform": "Polymer/platform#~0.2.3",
+		"polymer": "Polymer/polymer#~0.2.3",
+		"backbone.ui.stickyheader": "*"
+	}
+}
