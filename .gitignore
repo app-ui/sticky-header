@@ -1,1 +1,3 @@
-bower_components
+components/
+bower_components/
+node_modules/
